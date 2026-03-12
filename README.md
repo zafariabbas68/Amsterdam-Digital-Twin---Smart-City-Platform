@@ -120,7 +120,7 @@ The **Amsterdam Digital Twin** is a production-ready smart city platform that in
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/amsterdam-digital-twin.git
+[git clone https://github.com/yourusername/amsterdam-digital-twin.git](https://github.com/zafariabbas68/Amsterdam-Digital-Twin---Smart-City-Platform.git)
 cd amsterdam-digital-twin
 
 # Create conda environment
