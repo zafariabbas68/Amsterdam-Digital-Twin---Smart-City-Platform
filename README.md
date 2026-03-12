@@ -1,6 +1,5 @@
 
-
-# 🏙️ Amsterdam Digital Twin -Smart City Platform v5.3
+# 🏙️ Amsterdam Digital Twin - Ultimate Smart City Platform v5.3
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-green)](LICENSE)
@@ -9,7 +8,7 @@
 [![Folium](https://img.shields.io/badge/Folium-0.19%2B-yellow)](https://python-visualization.github.io/folium/)
 
 <div align="center">
-  <img src="amsterdam_ultimate_dashboard.png" alt="Amsterdam Digital Twin Ultimate Dashboard" width="900"/>
+  <img src="amsterdam_ultimate_dashboard.png" alt="Amsterdam Digital Twin Ultimate Dashboard" width="1000"/>
   <p><em><b>Figure 1:</b> Ultimate Statistical Dashboard - 20 Publication-Quality Visualizations</em></p>
 </div>
 
@@ -60,36 +59,29 @@ The **Amsterdam Digital Twin v5.3** is a production-ready, research-grade smart 
 - **GeoServer Ready**: OGC API Features collections and GeoJSON exports
 - **Spatial Indexing**: Optimized for spatial queries
 
-### 🌍 **Standards Compliance**
-- **OGC API Features**: Compliant metadata and endpoints
-- **INSPIRE Directive**: EU spatial data infrastructure standards
-- **FAIR Principles**: Findable, Accessible, Interoperable, Reusable
-
 ## 🖼️ **Visualization Gallery**
 
 ### Ultimate Statistical Dashboard (20 Plots)
 
 <div align="center">
   <img src="amsterdam_ultimate_dashboard.png" alt="Ultimate Statistical Dashboard" width="1000"/>
-  <p><em><b>Figure 2:</b> Complete 20-panel dashboard showing traffic patterns, air quality, correlation analysis, spatial distribution, and policy impacts</em></p>
+  <p><em><b>Figure 2:</b> Complete 20-panel dashboard showing traffic patterns, air quality components, correlation analysis, spatial distribution, and policy impacts with uncertainty bands</em></p>
 </div>
 
 ### Interactive Plotly Dashboard
 
 <div align="center">
-  <a href="amsterdam_interactive_dashboard.html">
-    <img src="amsterdam_interactive_dashboard copy.html" alt="Interactive Dashboard Preview" width="800"/>
-  </a>
-  <p><em><b>Figure 3:</b> Interactive Plotly dashboard with 9 linked plots - hover, zoom, and explore</em></p>
+  <img src="amsterdam_dashboard_screenshot.png" alt="Interactive Dashboard Screenshot" width="900"/>
+  <p><em><b>Figure 3:</b> Interactive Plotly dashboard with 9 linked plots - hover, zoom, and explore real-time data</em></p>
+  <p>🔗 <a href="amsterdam_interactive_dashboard.html"><b>Click here to download the live interactive version</b></a> (open in browser)</p>
 </div>
 
 ### WebGIS Interactive Map
 
 <div align="center">
-  <a href="amsterdam_digital_twin_ultimate.html">
-    <img src="amsterdam_digital_twin_ultimate.html" alt="WebGIS Map Preview" width="800"/>
-  </a>
+  <img src="amsterdam_digital_twin_ultimate.html" alt="WebGIS Map Preview" width="900"/>
   <p><em><b>Figure 4:</b> Interactive Folium map with three layers: 🏢 Buildings (colored by height), 🚗 Traffic locations (colored by intensity), and 🌍 Air quality stations</em></p>
+  <p>🔗 <a href="amsterdam_digital_twin_ultimate.html"><b>Click here to download the live interactive map</b></a> (open in browser)</p>
 </div>
 
 ## 📊 **Sample Results from Latest Run**
@@ -201,8 +193,9 @@ When you run the digital twin, these files are created in your working directory
 | File | Description | Preview |
 |------|-------------|---------|
 | `amsterdam_ultimate_dashboard.png` | 20 publication-quality statistical plots | ✅ [View Above](#visualization-gallery) |
-| `amsterdam_interactive_dashboard.html` | Interactive Plotly dashboard with 9 plots | ✅ [Interactive](#visualization-gallery) |
-| `amsterdam_digital_twin_ultimate.html` | WebGIS map with all three layers | ✅ [Interactive](#visualization-gallery) |
+| `amsterdam_interactive_dashboard.html` | Interactive Plotly dashboard with 9 plots | ✅ [Download](#visualization-gallery) |
+| `amsterdam_digital_twin_ultimate.html` | WebGIS map with all three layers | ✅ [Download](#visualization-gallery) |
+| `amsterdam_dashboard_screenshot.png` | Screenshot of interactive dashboard | ✅ [View Above](#visualization-gallery) |
 | `ogc_collections.json` | OGC API Features metadata | 📄 JSON |
 | `buildings_sample.geojson` | GeoJSON sample for GeoServer | 📄 GeoJSON |
 
@@ -235,6 +228,16 @@ The WebGIS map includes three fully interactive layers:
 | **ISO 19115** | ✅ Full | Comprehensive metadata |
 | **FAIR Principles** | ✅ Full | Findable, Accessible, Interoperable, Reusable |
 
+## 📄 **License**
+
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0) - see the [LICENSE](LICENSE) file for details.
+
+This license allows for:
+- ✓ Commercial use
+- ✓ Modification
+- ✓ Distribution
+- ✓ Private use
+
 ## 📝 **Citation**
 
 If you use this project in your research or work, please cite:
@@ -262,6 +265,6 @@ If you use this project in your research or work, please cite:
 
 <div align="center">
   <p>🏙️ <strong>Amsterdam Digital Twin v5.3</strong> - 20 Visualizations • Monte Carlo Uncertainty • Bootstrap CI • PostGIS • GeoServer • WebGIS</p>
+  <p>📊 <strong>Latest Results:</strong> r = 0.938 | R² = 0.880 | 20% LEZ: 2.05 µg/m³ NO₂ reduction | CO₂ savings: 9.8 tons/day</p>
   <p>⭐ Star this repository if you find it useful!</p>
-  <p>📊 <strong>Latest Results:</strong> r = 0.938 | R² = 0.880 | 20% LEZ: 2.05 µg/m³ NO₂ reduction</p>
 </div>
