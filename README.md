@@ -1,6 +1,6 @@
 
 
-# 🏙️ Amsterdam Digital Twin - Ultimate Smart City Platform v5.3
+# 🏙️ Amsterdam Digital Twin -Smart City Platform v5.3
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-green)](LICENSE)
