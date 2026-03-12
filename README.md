@@ -2,7 +2,7 @@
 
 # 📚 **UPDATED README.md with Your Actual Plots**
 
-```markdown
+
 # 🏙️ Amsterdam Digital Twin - Ultimate Smart City Platform v5.3
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
