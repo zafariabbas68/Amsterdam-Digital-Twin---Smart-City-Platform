@@ -1,0 +1,80 @@
+{
+  "collections": [
+    {
+      "id": "buildings",
+      "title": "Amsterdam 3D Buildings",
+      "description": "3DBAG buildings with height, function, energy label, and exposure metrics",
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              4.85,
+              52.33,
+              4.95,
+              52.4
+            ]
+          ],
+          "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+        }
+      },
+      "links": [
+        {
+          "rel": "items",
+          "href": "/geoserver/amsterdam/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=amsterdam:buildings&outputFormat=application/json",
+          "type": "application/geo+json"
+        }
+      ]
+    },
+    {
+      "id": "traffic",
+      "title": "NDW Traffic Measurements",
+      "description": "Real-time traffic data from Amsterdam ring road",
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              4.85,
+              52.33,
+              4.95,
+              52.4
+            ]
+          ],
+          "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+        },
+        "temporal": {
+          "interval": [
+            [
+              "2024-03-10T00:00:00Z",
+              "2024-03-10T23:45:00Z"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "air_quality",
+      "title": "RIVM Air Quality",
+      "description": "NO2, PM10, and PM2.5 measurements from Amsterdam stations",
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              4.85,
+              52.33,
+              4.95,
+              52.4
+            ]
+          ],
+          "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "/geoserver/amsterdam/collections",
+      "type": "application/json"
+    }
+  ]
+}
