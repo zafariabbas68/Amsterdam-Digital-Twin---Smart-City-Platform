@@ -1,27 +1,31 @@
 
-# 🏙️ Amsterdam Digital Twin - Smart City Platform
+
+# 📚 **UPDATED README.md with Your Actual Plots**
+
+```markdown
+# 🏙️ Amsterdam Digital Twin - Ultimate Smart City Platform v5.3
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-green)](LICENSE)
 [![PostGIS](https://img.shields.io/badge/PostGIS-3.0%2B-orange)](https://postgis.net/)
 [![GeoServer](https://img.shields.io/badge/GeoServer-2.23%2B-brightgreen)](http://geoserver.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-yellow)](https://tensorflow.org/)
+[![Folium](https://img.shields.io/badge/Folium-0.19%2B-yellow)](https://python-visualization.github.io/folium/)
 
 <div align="center">
-  <img src="docs/images/dashboard_preview.png" alt="Amsterdam Digital Twin Dashboard" width="800"/>
-  <p><em>Professional statistical dashboard with 16+ publication-quality visualizations</em></p>
+  <img src="amsterdam_ultimate_dashboard.png" alt="Amsterdam Digital Twin Ultimate Dashboard" width="900"/>
+  <p><em><b>Figure 1:</b> Ultimate Statistical Dashboard - 20 Publication-Quality Visualizations</em></p>
 </div>
 
 ## 📋 **Table of Contents**
 - [Overview](#-overview)
 - [Key Features](#-key-features)
+- [Visualization Gallery](#-visualization-gallery)
 - [System Architecture](#-system-architecture)
 - [Technology Stack](#-technology-stack)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
-- [Project Structure](#-project-structure)
 - [Output Files](#-output-files)
-- [Screenshots](#-screenshots)
+- [Interactive Map](#-interactive-map)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Citation](#-citation)
@@ -29,13 +33,13 @@
 
 ## 🎯 **Overview**
 
-The **Amsterdam Digital Twin** is a production-ready smart city platform that integrates multi-source urban data to create a comprehensive digital representation of Amsterdam. This system demonstrates professional-grade geoinformatics engineering, combining:
+The **Amsterdam Digital Twin v5.3** is a production-ready, research-grade smart city platform that integrates multi-source urban data to create a comprehensive digital representation of Amsterdam. This system demonstrates professional geoinformatics engineering, combining:
 
-- 🏢 **3D City Model** - 400+ buildings with realistic attributes
-- 🚗 **Real-time Traffic Simulation** - 672 traffic measurements across major arteries
-- 🌍 **Environmental Monitoring** - 576 air quality measurements from 6 stations
-- 📊 **Advanced Analytics** - Statistical validation, spatial analysis, scenario modeling
-- 🗺️ **Interactive Visualization** - Professional dashboards and WebGIS maps
+- 🏢 **3D City Model** - 400+ buildings with realistic attributes (height: 3-180m)
+- 🚗 **Real-time Traffic Simulation** - 672 traffic measurements across 7 major arteries
+- 🌍 **Environmental Monitoring** - 576 air quality measurements from 6 stations (NO₂, PM10, PM2.5, O₃)
+- 📊 **Advanced Analytics** - Bootstrap confidence intervals, Monte Carlo uncertainty propagation
+- 🗺️ **Interactive Visualization** - 20+ professional plots + interactive WebGIS map
 
 ## ✨ **Key Features**
 
@@ -54,11 +58,6 @@ The **Amsterdam Digital Twin** is a production-ready smart city platform that in
 - **Monte Carlo Uncertainty**: Scenario simulations with uncertainty propagation
 - **Regression Diagnostics**: Residual plots, Q-Q plots, R² analysis
 
-### 🗺️ **Visualization Suite**
-- **16-Panel Statistical Dashboard**: Publication-quality matplotlib plots
-- **Interactive Plotly Dashboard**: Hoverable, zoomable analytics
-- **Fixed WebGIS Map**: Three-layer map with building, traffic, and air quality overlays
-
 ### 🗄️ **Database Integration**
 - **PostGIS**: Full spatial database support with geometry columns
 - **GeoServer Ready**: OGC API Features collections and GeoJSON exports
@@ -68,6 +67,51 @@ The **Amsterdam Digital Twin** is a production-ready smart city platform that in
 - **OGC API Features**: Compliant metadata and endpoints
 - **INSPIRE Directive**: EU spatial data infrastructure standards
 - **FAIR Principles**: Findable, Accessible, Interoperable, Reusable
+
+## 🖼️ **Visualization Gallery**
+
+### Ultimate Statistical Dashboard (20 Plots)
+
+<div align="center">
+  <img src="amsterdam_ultimate_dashboard.png" alt="Ultimate Statistical Dashboard" width="1000"/>
+  <p><em><b>Figure 2:</b> Complete 20-panel dashboard showing traffic patterns, air quality, correlation analysis, spatial distribution, and policy impacts</em></p>
+</div>
+
+### Interactive Plotly Dashboard
+
+<div align="center">
+  <a href="amsterdam_interactive_dashboard.html">
+    <img src="amsterdam_interactive_dashboard copy.html" alt="Interactive Dashboard Preview" width="800"/>
+  </a>
+  <p><em><b>Figure 3:</b> Interactive Plotly dashboard with 9 linked plots - hover, zoom, and explore</em></p>
+</div>
+
+### WebGIS Interactive Map
+
+<div align="center">
+  <a href="amsterdam_digital_twin_ultimate.html">
+    <img src="amsterdam_digital_twin_ultimate.html" alt="WebGIS Map Preview" width="800"/>
+  </a>
+  <p><em><b>Figure 4:</b> Interactive Folium map with three layers: 🏢 Buildings (colored by height), 🚗 Traffic locations (colored by intensity), and 🌍 Air quality stations</em></p>
+</div>
+
+## 📊 **Sample Results from Latest Run**
+
+```
+📊 DATA SUMMARY:
+   • Buildings: 330 (3DBAG LoD2.2)
+   • Traffic: 672 measurements (15-min intervals)
+   • Air Quality: 576 measurements (hourly)
+
+🔬 VALIDATION (95% CI):
+   • Traffic-NO₂ correlation: r = 0.938 [0.917, 0.962]
+   • R² = 0.880
+   • Mean building height: 18.7m
+
+🔮 SCENARIO (20% LEZ with 95% CI):
+   • NO₂ reduction: 2.05 [1.62, 2.51] µg/m³
+   • CO₂ savings: 9.8 [7.5, 12.2] tons/day
+```
 
 ## 🏗️ **System Architecture**
 
@@ -116,12 +160,12 @@ The **Amsterdam Digital Twin** is a production-ready smart city platform that in
 - PostgreSQL with PostGIS extension (optional)
 - Conda (recommended) or pip
 
-### Option 1: Conda Environment (Recommended)
+### Quick Install with Conda
 
 ```bash
 # Clone the repository
-[git clone https://github.com/yourusername/amsterdam-digital-twin.git](https://github.com/zafariabbas68/Amsterdam-Digital-Twin---Smart-City-Platform.git)
-cd amsterdam-digital-twin
+git clone https://github.com/zafariabbas68/Amsterdam-Digital-Twin---Smart-City-Platform.git
+cd Amsterdam-Digital-Twin---Smart-City-Platform
 
 # Create conda environment
 conda create -n amsterdam-twin python=3.10 -y
@@ -132,18 +176,6 @@ pip install -r requirements.txt
 
 # For TensorFlow support (optional)
 pip install tensorflow
-```
-
-### Option 2: Pip Installation
-
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install geopandas pandas numpy scipy scikit-learn matplotlib seaborn plotly folium
-pip install psycopg2-binary sqlalchemy geoalchemy2
 ```
 
 ### PostGIS Setup (Optional)
@@ -157,104 +189,46 @@ CREATE EXTENSION postgis;
 
 ## 🚀 **Quick Start**
 
-### Run the Complete Digital Twin
-
 ```python
 # In Jupyter Notebook or Python script
 from amsterdam_digital_twin import main
 
-# Execute the full pipeline
+# Execute the full pipeline (generates all plots and maps)
 main()
 ```
 
-### Or Run Step-by-Step
+## 📁 **Output Files Generated**
 
-```python
-# 1. Initialize data loader
-loader = DutchDataLoader()
-bbox = "4.85,52.33,4.95,52.40"
+When you run the digital twin, these files are created in your working directory:
 
-# 2. Load data
-buildings = loader.load_3dbag_buildings(bbox)
-traffic = loader.load_ndw_traffic()
-air_quality = loader.load_rivm_air_quality()
+| File | Description | Preview |
+|------|-------------|---------|
+| `amsterdam_ultimate_dashboard.png` | 20 publication-quality statistical plots | ✅ [View Above](#visualization-gallery) |
+| `amsterdam_interactive_dashboard.html` | Interactive Plotly dashboard with 9 plots | ✅ [Interactive](#visualization-gallery) |
+| `amsterdam_digital_twin_ultimate.html` | WebGIS map with all three layers | ✅ [Interactive](#visualization-gallery) |
+| `ogc_collections.json` | OGC API Features metadata | 📄 JSON |
+| `buildings_sample.geojson` | GeoJSON sample for GeoServer | 📄 GeoJSON |
 
-# 3. Run spatial analytics
-analytics = SpatialAnalytics(buildings)
-buildings = analytics.calculate_traffic_exposure(traffic)
-buildings = analytics.interpolate_air_quality(air_quality)
+## 🗺️ **Interactive Map Features**
 
-# 4. Statistical validation
-stats = EnhancedStatisticalValidation.traffic_no2_correlation_with_ci(traffic, air_quality)
+The WebGIS map includes three fully interactive layers:
 
-# 5. Run scenarios
-engine = EnhancedScenarioEngine(traffic, air_quality, buildings)
-scenarios = engine.run_all_scenarios()
+### 🏢 **Buildings Layer**
+- 330+ building footprints
+- Color-coded by height (dark red >50m, red 30-50m, blue 15-30m, green <15m)
+- Popup with height, type, year, energy label
 
-# 6. Create visualizations
-viz = EnhancedStatisticalVisualizer(traffic, air_quality, buildings, stats, scenarios)
-viz.create_professional_dashboard()
+### 🚗 **Traffic Locations Layer**
+- Sampled traffic points (100 locations)
+- Color-coded by intensity (red >3000, orange 2000-3000, yellow <2000)
+- Popup with intensity and location
 
-# 7. Create web map
-map_viz = FixedWebGISVisualizer(buildings, traffic, air_quality)
-webmap = map_viz.create_fixed_map()
-webmap.save('amsterdam_digital_twin.html')
-```
-
-## 📁 **Project Structure**
-
-```
-amsterdam-digital-twin/
-│
-├── 📂 data/
-│   ├── buildings/          # Building data
-│   ├── traffic/            # Traffic measurements
-│   └── air_quality/        # Air quality data
-│
-├── 📂 src/
-│   ├── __init__.py
-│   ├── data_loader.py      # DutchDataLoader class
-│   ├── analytics.py        # SpatialAnalytics class
-│   ├── statistics.py       # Statistical validation
-│   ├── scenarios.py        # Scenario engine
-│   ├── visualizations.py   # Dashboard generators
-│   └── postgis_manager.py  # Database connector
-│
-├── 📂 notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_spatial_analytics.ipynb
-│   └── 03_full_pipeline.ipynb
-│
-├── 📂 docs/
-│   ├── images/             # Screenshots and diagrams
-│   └── api/                # API documentation
-│
-├── 📂 tests/
-│   ├── test_analytics.py
-│   └── test_statistics.py
-│
-├── requirements.txt
-├── environment.yml
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
-## 📊 **Output Files**
-
-When you run the digital twin, the following files are generated:
-
-| File | Description |
-|------|-------------|
-| `amsterdam_professional_dashboard.png` | 16 publication-quality statistical plots |
-| `amsterdam_interactive_dashboard.html` | Interactive Plotly dashboard |
-| `amsterdam_digital_twin_fixed.html` | WebGIS map with all three layers |
-| `ogc_collections.json` | OGC API Features metadata |
-| `buildings_sample.geojson` | GeoJSON sample for GeoServer |
+### 🌍 **Air Quality Stations Layer**
+- 6 monitoring stations across Amsterdam
+- Popup with NO₂ and PM10 averages
+- Green marker icons
 
 ## ✅ **Standards Compliance**
-
-This project is designed to be compliant with international geospatial standards:
 
 | Standard | Compliance | Implementation |
 |----------|------------|----------------|
@@ -263,50 +237,6 @@ This project is designed to be compliant with international geospatial standards
 | **CityGML / CityJSON** | ✅ Partial | Building attributes ready |
 | **ISO 19115** | ✅ Full | Comprehensive metadata |
 | **FAIR Principles** | ✅ Full | Findable, Accessible, Interoperable, Reusable |
-| **BAG Register** | ✅ Compatible | Building data structure |
-| **NDW Format** | ✅ Compatible | Traffic data structure |
-| **RIVM Format** | ✅ Compatible | Air quality data structure |
-
-## 📸 **Screenshots**
-
-<div align="center">
-  <img src="docs/images/dashboard_preview.png" alt="Statistical Dashboard" width="400"/>
-  <img src="docs/images/map_preview.png" alt="WebGIS Map" width="400"/>
-  <p><em>Left: Statistical Dashboard | Right: Interactive WebGIS Map</em></p>
-</div>
-
-<div align="center">
-  <img src="docs/images/layers_preview.png" alt="Map Layers" width="800"/>
-  <p><em>Three-layer map with Buildings, Traffic, and Air Quality overlays</em></p>
-</div>
-
-## 🤝 **Contributing**
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow PEP 8 style guide
-- Add docstrings for all functions and classes
-- Include unit tests for new features
-- Update documentation as needed
-
-## 📄 **License**
-
-This project is licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0) - see the [LICENSE](LICENSE) file for details.
-
-This license allows for:
-- ✓ Commercial use
-- ✓ Modification
-- ✓ Distribution
-- ✓ Private use
-
-With the condition that appropriate credit is given.
 
 ## 📝 **Citation**
 
@@ -315,10 +245,10 @@ If you use this project in your research or work, please cite:
 ```bibtex
 @software{amsterdam_digital_twin_2025,
   author = {Zafari, Ghulam Abbas},
-  title = {Amsterdam Digital Twin: Smart City Platform},
+  title = {Amsterdam Digital Twin: Ultimate Smart City Platform v5.3},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/amsterdam-digital-twin}
+  url = {https://github.com/zafariabbas68/Amsterdam-Digital-Twin---Smart-City-Platform}
 }
 ```
 
@@ -334,36 +264,7 @@ If you use this project in your research or work, please cite:
 ---
 
 <div align="center">
-  <p>🏙️ <strong>Amsterdam Digital Twin</strong> - Building the future of smart cities, one dataset at a time.</p>
+  <p>🏙️ <strong>Amsterdam Digital Twin v5.3</strong> - 20 Visualizations • Monte Carlo Uncertainty • Bootstrap CI • PostGIS • GeoServer • WebGIS</p>
   <p>⭐ Star this repository if you find it useful!</p>
+  <p>📊 <strong>Latest Results:</strong> r = 0.938 | R² = 0.880 | 20% LEZ: 2.05 µg/m³ NO₂ reduction</p>
 </div>
-```
-
-## 📂 **Repository Name Options**
-
-```
-amsterdam-digital-twin
-amsterdam-smart-city
-urban-digital-twin
-city-digital-twin
-smart-city-platform
-```
-
-## 🏷️ **GitHub Topics/Tags**
-
-```
-digital-twin
-smart-city
-gis
-postgis
-geoserver
-amsterdam
-urban-planning
-data-science
-python
-visualization
-spatial-analytics
-ogc-standards
-3d-city-model
-environmental-monitoring
-traffic-analysis
