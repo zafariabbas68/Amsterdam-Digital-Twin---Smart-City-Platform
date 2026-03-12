@@ -76,13 +76,7 @@ The **Amsterdam Digital Twin v5.3** is a production-ready, research-grade smart 
   <p>🔗 <a href="amsterdam_interactive_dashboard.html"><b>Click here to download the live interactive version</b></a> (open in browser)</p>
 </div>
 
-### WebGIS Interactive Map
 
-<div align="center">
-  <img src="amsterdam_digital_twin_ultimate.html" alt="WebGIS Map Preview" width="900"/>
-  <p><em><b>Figure 4:</b> Interactive Folium map with three layers: 🏢 Buildings (colored by height), 🚗 Traffic locations (colored by intensity), and 🌍 Air quality stations</em></p>
-  <p>🔗 <a href="amsterdam_digital_twin_ultimate.html"><b>Click here to download the live interactive map</b></a> (open in browser)</p>
-</div>
 
 ## 📊 **Sample Results from Latest Run**
 
